@@ -1,13 +1,15 @@
 .footer {
     position: fixed;
     bottom: 0;
+    left: 0; /* Adicionei para garantir alinhamento */
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #836FFF;
-    border-bottom: 2px solid #6495ED;
-    padding: 0.5rem;
+    background-color: #836FFF; /* Mesma cor exata */
+    border-top: 2px solid #6495ED; /* Mudei para border-top */
+    padding: 0.75rem; /* Padronizei com o header */
+    z-index: 1000; /* Mesmo z-index do header */
 
 }
 

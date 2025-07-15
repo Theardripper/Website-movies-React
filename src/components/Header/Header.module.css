@@ -1,4 +1,4 @@
-.header {
+/* .header {
     border-bottom: 2px solid #6495ED	;
     position: fixed;
     top: 0;
@@ -10,12 +10,13 @@
     justify-content: space-between;
     background-color: #836FFF	;
     z-index: 1000;
+    bottom: 2;
 
 
 }
 
 .header span {
-    color: #f0f0f0;
+    color: #fff;
     font-size: 2rem;
     font-weight: 700;
 }
@@ -29,4 +30,43 @@
     color: #fff;
     padding: 0.5rem;
 
+} */
+
+/* Adicione isso no início do seu CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    border-bottom: 2px solid #6495ED;
+    position: fixed;
+    top: 0;
+    left: 0; /* Adicione isso para garantir que comece da borda esquerda */
+    width: 100%;
+    display: flex;
+    padding: 0.75rem;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #836FFF;
+    z-index: 1000;
+    /* Removi o "bottom: 2" pois não faz sentido em um header fixo no topo */
+}
+
+.header span {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.header nav {
+    margin-right: 1rem; /* Adicionei "rem" à unidade que estava faltando */
+}
+
+.header a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem;
 }
